@@ -20,10 +20,10 @@
                     <!-- Navigation -->
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark">Home</a>
+                            <a class="nav-link text-dark" asp-page="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark">New Task</a>
+                            <a class="nav-link text-dark" asp-page="CreateTask">New Task</a>
                         </li>
                     </ul>
                 </div>
@@ -33,6 +33,7 @@
     <div class="container">
         <main role="main" class="pb-3">
             <!-- This is where our pages should be rendered -->
+            @RenderBody()
         </main>
     </div>
 
