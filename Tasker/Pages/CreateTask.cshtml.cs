@@ -10,7 +10,7 @@ namespace Tasker.Pages
     public class CreateTaskModel : PageModel
     {
         [BindProperty]
-        public Task NewTask = new Task();
+        public Task NewTask { get; set; }
 
         public IActionResult OnPost()
         {

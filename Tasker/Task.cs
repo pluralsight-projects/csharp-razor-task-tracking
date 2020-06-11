@@ -2,9 +2,9 @@
 {
     public class Task
     {
-        int Id;
-        string Title;
-        string Description;
-        int Priority;
+        public int Id;
+        public string Title;
+        public string Description;
+        public int Priority;
     }
 }
