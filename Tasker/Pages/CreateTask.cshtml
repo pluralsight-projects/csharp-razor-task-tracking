@@ -5,4 +5,15 @@
 }
 
 <h1>New Task</h1>
+<!--post to the current page-->
+<form asp-page="CreateTask" method="post">
+    <label asp-for="NewTask.Title">Title</label>
+    <input type="text" asp-for="NewTask.Title" />
 
+    <label asp-for="NewTask.Description">Description</label>
+    <input asp-for="NewTask.Description" type="text" />
+
+    <label asp-for="NewTask.Priority">Priority</label>
+    <input asp-for="NewTask.Priority" type="text" />
+    <input type="submit" />
+</form>
